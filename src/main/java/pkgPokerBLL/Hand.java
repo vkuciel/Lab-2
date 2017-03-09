@@ -213,7 +213,7 @@ public class Hand {
 	
 	public static boolean isHandStraight(Hand h, HandScore hs) {
 		
-		boolean isHandStraight = false;
+		boolean isHandStraight = true;
 		
 		if(isStraight(h.getCardsInHand()) == true) {
 			isHandStraight = true;
@@ -374,7 +374,7 @@ public class Hand {
 	
 
 	public static boolean isAcesAndEights(Hand h, HandScore hs) {
-	
+		
 		boolean isAcesAndEights = false;
 		
 		ArrayList<Card> kickers = new ArrayList<Card>();
@@ -395,7 +395,7 @@ public class Hand {
 		}
 				
 		return isAcesAndEights;
-	}	
+	}		
 	
 	
 	public static boolean isHandFullHouse(Hand h, HandScore hs) {
